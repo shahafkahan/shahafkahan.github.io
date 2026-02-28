@@ -10,8 +10,8 @@ const ProductDetail: React.FC = () => {
   if (!product) {
     return (
       <Container sx={{ py: 10, textAlign: 'center' }}>
-        <Typography variant="h4">המוצר לא נמצא</Typography>
-        <Button component={RouterLink} to="/" sx={{ mt: 2 }}>חזרה לעבודות</Button>
+        <Typography variant="h4">הפתרון לא נמצא</Typography>
+        <Button component={RouterLink} to="/" sx={{ mt: 2 }}>חזרה לפתרונות</Button>
       </Container>
     );
   }
@@ -21,7 +21,7 @@ const ProductDetail: React.FC = () => {
       <Container maxWidth="xl">
         <Box sx={{ mb: 4 }}>
           <Breadcrumbs sx={{ mb: 2 }}>
-            <Link component={RouterLink} to="/" underline="hover" color="inherit">עבודות</Link>
+            <Link component={RouterLink} to="/" underline="hover" color="inherit">פתרונות</Link>
             <Typography color="text.primary">{product.title}</Typography>
           </Breadcrumbs>
           <Button
@@ -30,7 +30,7 @@ const ProductDetail: React.FC = () => {
             startIcon={<ArrowForwardIcon />}
             sx={{ color: 'text.secondary' }}
           >
-            חזרה לעבודות
+            חזרה לפתרונות
           </Button>
         </Box>
 
@@ -83,7 +83,7 @@ const ProductDetail: React.FC = () => {
               </Typography>
 
               <Button variant="contained" size="large" fullWidth>
-                התעניינות בפרויקט
+                אני רוצה את הפתרון הזה
               </Button>
             </Box>
           </Grid>

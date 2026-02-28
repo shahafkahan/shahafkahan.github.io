@@ -28,11 +28,11 @@ const Navbar: React.FC = () => {
                         letterSpacing: '1px'
                       }}
                     >
-                      תיק עבודות<Box component="span" sx={{ color: 'primary.main' }}>.</Box>
+                      SmartIT<Box component="span" sx={{ color: 'primary.main' }}>.</Box>
                     </Typography>
           
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-                      <Button component={RouterLink} to="/" color="inherit" sx={{ opacity: 0.8, '&:hover': { opacity: 1 } }}>עבודות</Button>
+                      <Button component={RouterLink} to="/" color="inherit" sx={{ opacity: 0.8, '&:hover': { opacity: 1 } }}>פתרונות</Button>
                       <Button color="inherit" sx={{ opacity: 0.8, '&:hover': { opacity: 1 } }}>שירותים</Button>
                       <Button color="inherit" sx={{ opacity: 0.8, '&:hover': { opacity: 1 } }}>אודות</Button>
                       <Button

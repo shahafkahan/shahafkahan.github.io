@@ -22,20 +22,21 @@ const Home: React.FC = () => {
                         WebkitTextFillColor: 'transparent',
                       }}
                     >
-                      תיק עבודות
+                      מקסימום יעילות, מינימום מאמץ
                     </Typography>
                     <Typography
                       variant="body1"
                       sx={{
-                        maxWidth: '600px',
+                        maxWidth: '700px',
                         mx: 'auto',
                         color: 'text.secondary',
                         mb: 4,
-                        fontSize: '1.1rem',
+                        fontSize: '1.2rem',
                         lineHeight: 1.6
                       }}
                     >
-                      אוסף של מוצרים דיגיטליים וחוויות ויזואליות שנוצרו בדייקנות ובתשוקה.
+                      אנחנו עוזרים לעסקים קטנים להחזיר לעצמם את הזמן היקר ביותר. 
+                      באמצעות אוטומציה חכמה ואופטימיזציה של מערכות המחשוב, אנחנו הופכים את יום העבודה שלכם למהיר, חלק ויעיל יותר.
                     </Typography>          
           <Stack direction="row" spacing={2} justifyContent="center">
             <IconButton color="inherit" sx={{ opacity: 0.7, '&:hover': { opacity: 1, color: 'primary.main' } }}>
