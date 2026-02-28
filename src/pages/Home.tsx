@@ -17,9 +17,11 @@ const Home: React.FC = () => {
                       sx={{
                         color: '#a29bfe',
                         mb: 2,
+                        fontSize: { xs: '2.5rem', sm: '3.5rem', md: '4.5rem' },
                         background: 'linear-gradient(to bottom, #a29bfe 0%, #7c4dff 100%)',
                         WebkitBackgroundClip: 'text',
                         WebkitTextFillColor: 'transparent',
+                        fontWeight: 900
                       }}
                     >
                       מקסימום יעילות, מינימום מאמץ
@@ -31,8 +33,9 @@ const Home: React.FC = () => {
                         mx: 'auto',
                         color: 'text.secondary',
                         mb: 4,
-                        fontSize: '1.2rem',
-                        lineHeight: 1.6
+                        fontSize: { xs: '1rem', sm: '1.2rem' },
+                        lineHeight: 1.6,
+                        px: 2
                       }}
                     >
                       אנחנו עוזרים לעסקים קטנים להחזיר לעצמם את הזמן היקר ביותר. 

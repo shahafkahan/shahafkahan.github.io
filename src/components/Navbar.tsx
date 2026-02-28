@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
       }}
     >
       <Container maxWidth="xl">
-        <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
+          <Toolbar disableGutters sx={{ justifyContent: 'space-between', px: 2 }}>
                     <Typography
                       variant="h6"
                       component={RouterLink}
@@ -25,20 +25,26 @@ const Navbar: React.FC = () => {
                         color: 'inherit',
                         display: 'flex',
                         alignItems: 'center',
-                        letterSpacing: '1px'
+                        letterSpacing: '1px',
+                        fontSize: { xs: '1.1rem', sm: '1.25rem' }
                       }}
                     >
                       SmartIT<Box component="span" sx={{ color: 'primary.main' }}>.</Box>
                     </Typography>
           
-                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-                      <Button component={RouterLink} to="/" color="inherit" sx={{ opacity: 0.8, '&:hover': { opacity: 1 } }}>פתרונות</Button>
-                      <Button color="inherit" sx={{ opacity: 0.8, '&:hover': { opacity: 1 } }}>שירותים</Button>
-                      <Button color="inherit" sx={{ opacity: 0.8, '&:hover': { opacity: 1 } }}>אודות</Button>
+                    <Box sx={{ display: 'flex', alignItems: 'center', gap: { xs: 1, sm: 2, md: 4 } }}>
+                      <Button component={RouterLink} to="/" color="inherit" sx={{ opacity: 0.8, '&:hover': { opacity: 1 }, fontSize: { xs: '0.85rem', sm: '1rem' }, px: { xs: 1, sm: 2 } }}>פתרונות</Button>
+                      <Button color="inherit" sx={{ opacity: 0.8, '&:hover': { opacity: 1 }, display: { xs: 'none', sm: 'inline-flex' } }}>שירותים</Button>
                       <Button
                         variant="contained"
                         color="primary"
-                        sx={{ ml: 2 }}
+                        sx={{ 
+                          ml: { xs: 1, sm: 2 },
+                          px: { xs: 1.5, sm: 3 },
+                          py: { xs: 0.5, sm: 1 },
+                          fontSize: { xs: '0.8rem', sm: '0.9rem' },
+                          minWidth: 'auto'
+                        }}
                       >
                         בואו נדבר
                       </Button>
