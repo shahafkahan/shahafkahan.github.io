@@ -39,14 +39,11 @@ A modern, RTL-supported portfolio application built with React, Vite, and Materi
   - **GitHub User Page** (`username.github.io`): Must use `base: '/'` in `vite.config.ts`.
   - **GitHub Project Page** (`username.github.io/repo-name/`): Must use `base: '/repo-name/'` or `./`.
 - **SPA Routing (Refreshes/Direct Links)**: 
-  - GitHub Pages does not support SPA routing natively. To use `BrowserRouter` (clean URLs):
-    1.  Place a `404.html` in the `public/` folder with the `spa-github-pages` redirection script.
-    2.  Add the corresponding decoder script to the `<head>` of `index.html`.
-  - **Alternative**: Use `HashRouter` if you want to avoid redirection scripts entirely.
+  - GitHub Pages does not support SPA routing natively. **Always use `HashRouter`** for production stability. This ensures that direct links and refreshes work without complex `404.html` redirection logic.
 - **Case Sensitivity**: GitHub Pages is case-sensitive. Ensure all file paths and imports match exactly in casing.
 
 ## Critical Mandates
 - **RTL Integrity**: Do not introduce styles that break RTL layout (e.g., avoid hardcoded `padding-left` when `padding-right` is intended for RTL).
 - **Consistency**: Maintain the established dark theme aesthetic and Material UI component overrides.
 - **Performance**: Leverage Vite's optimized build and React's efficient rendering patterns.
-- **Routing**: Ensure routing is compatible with GitHub Pages. Use `HashRouter` for simplicity OR `BrowserRouter` with the implemented `404.html` redirection script for clean URLs.
+- **Routing**: **Stick to `HashRouter`** for all production deployments on GitHub Pages.
