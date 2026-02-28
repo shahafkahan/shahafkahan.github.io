@@ -20,10 +20,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         overflow: 'hidden'
       }}
     >
-      <Box sx={{ position: 'relative', pt: '120%' /* Tall image ratio */ }}>
-        <CardMedia
+      <Box sx={{ position: 'relative', pt: '120%', overflow: 'hidden' }}>
+        <Box
           component="img"
-          image={product.mainImage}
+          src={product.mainImage}
           alt={product.title}
           sx={{
             position: 'absolute',
@@ -32,6 +32,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
+            transition: 'transform 0.5s ease',
+            '.MuiCard-root:hover &': {
+              transform: 'scale(1.1)',
+            },
           }}
         />
         <Box 
