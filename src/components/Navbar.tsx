@@ -15,35 +15,34 @@ const Navbar: React.FC = () => {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
-          <Typography
-            variant="h6"
-            component={RouterLink}
-            to="/"
-            sx={{
-              fontWeight: 800,
-              textDecoration: 'none',
-              color: 'inherit',
-              display: 'flex',
-              alignItems: 'center',
-              letterSpacing: '1px'
-            }}
-          >
-            PORTFOLIO<Box component="span" sx={{ color: 'primary.main' }}>.</Box>
-          </Typography>
-
-          <Box sx={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-            <Button component={RouterLink} to="/" color="inherit" sx={{ opacity: 0.8, '&:hover': { opacity: 1 } }}>Work</Button>
-            <Button color="inherit" sx={{ opacity: 0.8, '&:hover': { opacity: 1 } }}>Services</Button>
-            <Button color="inherit" sx={{ opacity: 0.8, '&:hover': { opacity: 1 } }}>About</Button>
-            <Button 
-              variant="contained" 
-              color="primary"
-              sx={{ ml: 2 }}
-            >
-              Let's Talk
-            </Button>
-          </Box>
-        </Toolbar>
+                    <Typography
+                      variant="h6"
+                      component={RouterLink}
+                      to="/"
+                      sx={{
+                        fontWeight: 800,
+                        textDecoration: 'none',
+                        color: 'inherit',
+                        display: 'flex',
+                        alignItems: 'center',
+                        letterSpacing: '1px'
+                      }}
+                    >
+                      תיק עבודות<Box component="span" sx={{ color: 'primary.main' }}>.</Box>
+                    </Typography>
+          
+                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                      <Button component={RouterLink} to="/" color="inherit" sx={{ opacity: 0.8, '&:hover': { opacity: 1 } }}>עבודות</Button>
+                      <Button color="inherit" sx={{ opacity: 0.8, '&:hover': { opacity: 1 } }}>שירותים</Button>
+                      <Button color="inherit" sx={{ opacity: 0.8, '&:hover': { opacity: 1 } }}>אודות</Button>
+                      <Button
+                        variant="contained"
+                        color="primary"
+                        sx={{ ml: 2 }}
+                      >
+                        בואו נדבר
+                      </Button>
+                    </Box>        </Toolbar>
       </Container>
     </AppBar>
   );

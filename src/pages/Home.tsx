@@ -11,33 +11,32 @@ const Home: React.FC = () => {
       <Container maxWidth="xl">
         {/* Hero Section */}
         <Box sx={{ textAlign: 'center', mb: 10 }}>
-          <Typography 
-            variant="h1" 
-            gutterBottom 
-            sx={{ 
-              color: '#a29bfe', 
-              mb: 2,
-              background: 'linear-gradient(to bottom, #a29bfe 0%, #7c4dff 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-            }}
-          >
-            Design Portfolio
-          </Typography>
-          <Typography 
-            variant="body1" 
-            sx={{ 
-              maxWidth: '600px', 
-              mx: 'auto', 
-              color: 'text.secondary',
-              mb: 4,
-              fontSize: '1.1rem',
-              lineHeight: 1.6
-            }}
-          >
-            A collection of digital products and visual experiences crafted with precision and passion.
-          </Typography>
-          
+                    <Typography
+                      variant="h1"
+                      gutterBottom
+                      sx={{
+                        color: '#a29bfe',
+                        mb: 2,
+                        background: 'linear-gradient(to bottom, #a29bfe 0%, #7c4dff 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                      }}
+                    >
+                      תיק עבודות
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      sx={{
+                        maxWidth: '600px',
+                        mx: 'auto',
+                        color: 'text.secondary',
+                        mb: 4,
+                        fontSize: '1.1rem',
+                        lineHeight: 1.6
+                      }}
+                    >
+                      אוסף של מוצרים דיגיטליים וחוויות ויזואליות שנוצרו בדייקנות ובתשוקה.
+                    </Typography>          
           <Stack direction="row" spacing={2} justifyContent="center">
             <IconButton color="inherit" sx={{ opacity: 0.7, '&:hover': { opacity: 1, color: 'primary.main' } }}>
               <GitHubIcon />

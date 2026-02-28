@@ -1,6 +1,6 @@
 import { useParams, Link as RouterLink } from 'react-router-dom';
 import { Container, Typography, Box, Grid, Chip, Button, Breadcrumbs, Link } from '@mui/material';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { products } from '../data/products';
 
 const ProductDetail: React.FC = () => {
@@ -10,8 +10,8 @@ const ProductDetail: React.FC = () => {
   if (!product) {
     return (
       <Container sx={{ py: 10, textAlign: 'center' }}>
-        <Typography variant="h4">Product not found</Typography>
-        <Button component={RouterLink} to="/" sx={{ mt: 2 }}>Back to Work</Button>
+        <Typography variant="h4">המוצר לא נמצא</Typography>
+        <Button component={RouterLink} to="/" sx={{ mt: 2 }}>חזרה לעבודות</Button>
       </Container>
     );
   }
@@ -21,16 +21,16 @@ const ProductDetail: React.FC = () => {
       <Container maxWidth="xl">
         <Box sx={{ mb: 4 }}>
           <Breadcrumbs sx={{ mb: 2 }}>
-            <Link component={RouterLink} to="/" underline="hover" color="inherit">Work</Link>
+            <Link component={RouterLink} to="/" underline="hover" color="inherit">עבודות</Link>
             <Typography color="text.primary">{product.title}</Typography>
           </Breadcrumbs>
-          <Button 
-            component={RouterLink} 
-            to="/" 
-            startIcon={<ArrowBackIcon />}
+          <Button
+            component={RouterLink}
+            to="/"
+            startIcon={<ArrowForwardIcon />}
             sx={{ color: 'text.secondary' }}
           >
-            Back to Work
+            חזרה לעבודות
           </Button>
         </Box>
 
@@ -38,19 +38,19 @@ const ProductDetail: React.FC = () => {
           {/* Images Section */}
           <Grid size={{ xs: 12, md: 7 }}>
             <Box sx={{ mb: 3 }}>
-              <img 
-                src={product.mainImage} 
-                alt={product.title} 
-                style={{ width: '100%', borderRadius: '16px', display: 'block' }} 
+              <img
+                src={product.mainImage}
+                alt={product.title}
+                style={{ width: '100%', borderRadius: '16px', display: 'block' }}
               />
             </Box>
             <Grid container spacing={2}>
               {product.additionalImages.map((img, idx) => (
                 <Grid key={idx} size={{ xs: 6 }}>
-                  <img 
-                    src={img} 
-                    alt={`${product.title} ${idx + 1}`} 
-                    style={{ width: '100%', borderRadius: '12px', display: 'block' }} 
+                  <img
+                    src={img}
+                    alt={`${product.title} ${idx + 1}`}
+                    style={{ width: '100%', borderRadius: '12px', display: 'block' }}
                   />
                 </Grid>
               ))}
@@ -66,13 +66,13 @@ const ProductDetail: React.FC = () => {
               <Typography variant="h3" sx={{ fontWeight: 800, mb: 3 }}>
                 {product.title}
               </Typography>
-              
+
               <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mb: 4 }}>
                 {product.tags.map((tag) => (
-                  <Chip 
-                    key={tag} 
-                    label={tag} 
-                    variant="outlined" 
+                  <Chip
+                    key={tag}
+                    label={tag}
+                    variant="outlined"
                     sx={{ borderColor: 'rgba(255, 255, 255, 0.1)' }}
                   />
                 ))}
@@ -83,7 +83,7 @@ const ProductDetail: React.FC = () => {
               </Typography>
 
               <Button variant="contained" size="large" fullWidth>
-                Inquire About Project
+                התעניינות בפרויקט
               </Button>
             </Box>
           </Grid>
@@ -92,5 +92,4 @@ const ProductDetail: React.FC = () => {
     </Box>
   );
 };
-
 export default ProductDetail;

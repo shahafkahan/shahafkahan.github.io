@@ -12,10 +12,10 @@ export interface Product {
 export const products: Product[] = [
   {
     id: 'ecosphere-dashboard',
-    title: 'EcoSphere Dashboard',
-    category: 'WEB APPLICATION',
-    shortDescription: 'A real-time environmental monitoring system with advanced data visualization.',
-    fullDescription: 'EcoSphere Dashboard is a comprehensive solution for monitoring environmental metrics in real-time. Built with a focus on data accuracy and user experience, it features interactive charts, live data streams from IoT sensors, and predictive analytics to forecast environmental trends. The dashboard is designed to help organizations make data-driven decisions for sustainability.',
+    title: 'לוח בקרה EcoSphere',
+    category: 'אפליקציית ווב',
+    shortDescription: 'מערכת ניטור סביבתית בזמן אמת עם ויזואליזציה מתקדמת של נתונים.',
+    fullDescription: 'EcoSphere Dashboard הוא פתרון מקיף לניטור מדדים סביבתיים בזמן אמת. המערכת נבנתה עם דגש על דיוק נתונים וחווית משתמש, וכוללת תרשימים אינטראקטיביים, הזרמת נתונים חיה מחיישני IoT ואנליטיקה חזויה לחיזוי מגמות סביבתיות. לוח הבקרה נועד לעזור לארגונים לקבל החלטות מבוססות נתונים עבור קיימות.',
     tags: ['React', 'TypeScript', 'D3.js', 'Node.js'],
     mainImage: 'https://images.unsplash.com/photo-1551288049-bbbda5366991?auto=format&fit=crop&q=80&w=800',
     additionalImages: [
@@ -26,9 +26,9 @@ export const products: Product[] = [
   {
     id: 'nexus-ecommerce',
     title: 'Nexus E-Commerce',
-    category: 'E-COMMERCE',
-    shortDescription: 'High-conversion retail platform for boutique tech accessories.',
-    fullDescription: 'Nexus E-Commerce is a premium shopping experience designed for boutique electronics and tech accessories. It features a custom checkout flow integrated with Stripe, a dynamic product filtering system, and a mobile-first responsive design. The platform leverages server-side rendering for optimal SEO and performance.',
+    category: 'אי-קומרס',
+    shortDescription: 'פלטפורמת קמעונאות בעלת אחוזי המרה גבוהים עבור אביזרי טכנולוגיה יוקרתיים.',
+    fullDescription: 'Nexus E-Commerce היא חוויית קנייה פרימיום המיועדת לאלקטרוניקה ואביזרי טכנולוגיה בוטיקיים. היא כוללת תהליך תשלום מותאם אישית המשולב עם Stripe, מערכת סינון מוצרים דינמית ועיצוב רספונסיבי המותאם למובייל. הפלטפורמה מנצלת רינדור בצד השרת עבור SEO וביצועים אופטימליים.',
     tags: ['Next.js', 'Stripe', 'Tailwind', 'PostgreSQL'],
     mainImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
     additionalImages: [
@@ -38,11 +38,11 @@ export const products: Product[] = [
   },
   {
     id: 'vanguard-brand',
-    title: 'Vanguard Brand Identity',
-    category: 'BRANDING',
-    shortDescription: 'Visual identity and design system for a cybersecurity startup.',
-    fullDescription: 'Vanguard Brand Identity is a complete visual overhaul for a modern cybersecurity company. The project included logo design, typography selection, color palette development, and a comprehensive brand guideline. The aesthetic is focused on trust, security, and forward-thinking innovation.',
-    tags: ['Brand Design', 'Typography', 'Illustrator', 'Figma'],
+    title: 'זהות מותג Vanguard',
+    category: 'מיתוג',
+    shortDescription: 'זהות ויזואלית ומערכת עיצוב עבור סטארט-אפ בתחום אבטחת הסייבר.',
+    fullDescription: 'זהות המותג Vanguard היא שיפוץ ויזואלי מלא עבור חברת אבטחת סייבר מודרנית. הפרויקט כלל עיצוב לוגו, בחירת טיפוגרפיה, פיתוח פלטת צבעים ומדריך מותג מקיף. האסתטיקה מתמקדת באמון, אבטחה וחדשנות צופה פני עתיד.',
+    tags: ['עיצוב מותג', 'טיפוגרפיה', 'Illustrator', 'Figma'],
     mainImage: 'https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=800',
     additionalImages: [
       'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=800',
@@ -51,11 +51,11 @@ export const products: Product[] = [
   },
   {
     id: 'aura-health',
-    title: 'Aura Health App',
-    category: 'HEALTHTECH',
-    shortDescription: 'Mobile application for mental wellness and meditation tracking.',
-    fullDescription: 'Aura Health App provides users with guided meditation sessions, stress tracking, and personalized wellness plans. The app uses biometric data to suggest breathing exercises and tracks progress over time with intuitive visualizations. The UI is designed to be calming and accessible for all users.',
-    tags: ['React Native', 'Firebase', 'Redux', 'Wellness'],
+    title: 'אפליקציית Aura Health',
+    category: 'בריאות דיגיטלית',
+    shortDescription: 'אפליקציית מובייל לרווחה נפשית ומעקב אחר מדיטציה.',
+    fullDescription: 'אפליקציית Aura Health מספקת למשתמשים מפגשי מדיטציה מודרכים, מעקב אחר סטרס ותוכניות בריאות מותאמות אישית. האפליקציה משתמשת בנתונים ביומטריים כדי להציע תרגילי נשימה ועוקבת אחר התקדמות לאורך זמן עם ויזואליזציות אינטואיטיביות. ממשק המשתמש עוצב כדי להיות מרגיע ונגיש לכל המשתמשים.',
+    tags: ['React Native', 'Firebase', 'Redux', 'בריאות'],
     mainImage: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800',
     additionalImages: [
       'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800',
@@ -65,9 +65,9 @@ export const products: Product[] = [
   {
     id: 'fintrack-pro',
     title: 'FinTrack Pro',
-    category: 'FINTECH',
-    shortDescription: 'Enterprise-grade financial portfolio management tool.',
-    fullDescription: 'FinTrack Pro is a high-performance tool for managing complex financial portfolios. It offers real-time stock market integration, tax reporting automation, and risk assessment models. The platform is designed for professional financial advisors and high-net-worth individuals who require precision and security.',
+    category: 'פינטק',
+    shortDescription: 'כלי לניהול תיקי השקעות פיננסיים ברמת ארגון.',
+    fullDescription: 'FinTrack Pro הוא כלי בעל ביצועים גבוהים לניהול תיקים פיננסיים מורכבים. הוא מציע שילוב עם בורסת המניות בזמן אמת, אוטומציה של דיווחי מס ומודלים להערכת סיכונים. הפלטפורמה מיועדת ליועצים פיננסיים מקצועיים ולאנשים בעלי הון עצמי גבוה הזקוקים לדיוק ואבטחה.',
     tags: ['Go', 'React', 'GraphQL', 'AWS'],
     mainImage: 'https://images.unsplash.com/photo-1454165833767-027ff39c157c?auto=format&fit=crop&q=80&w=800',
     additionalImages: [
@@ -77,11 +77,11 @@ export const products: Product[] = [
   },
   {
     id: 'zenith-mobile',
-    title: 'Zenith Mobile Design',
-    category: 'MOBILE DESIGN',
-    shortDescription: 'UX/UI design for a travel exploration application.',
-    fullDescription: 'Zenith Mobile Design focuses on the user journey of travel enthusiasts. The design emphasizes high-quality imagery, ease of navigation, and a robust discovery engine. Every interaction was crafted to inspire wonder and simplify the planning process of global explorations.',
-    tags: ['UI Design', 'UX Research', 'Prototyping'],
+    title: 'עיצוב מובייל Zenith',
+    category: 'עיצוב מובייל',
+    shortDescription: 'עיצוב UX/UI עבור אפליקציית חקר טיולים.',
+    fullDescription: 'עיצוב המובייל Zenith מתמקד במסע המשתמש של חובבי טיולים. העיצוב מדגיש דימויים איכותיים, קלות ניווט ומנוע גילוי חזק. כל אינטראקציה עוצבה כדי לעורר פליאה ולפשט את תהליך התכנון של טיולים גלובליים.',
+    tags: ['עיצוב ממשק', 'מחקר חווית משתמש', 'פרוטוטיפינג'],
     mainImage: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800',
     additionalImages: [
       'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=800',
@@ -91,10 +91,10 @@ export const products: Product[] = [
   {
     id: 'spectral-graphics',
     title: 'Spectral Graphics',
-    category: 'WEB APPLICATION',
-    shortDescription: 'Online tool for generating abstract generative art patterns.',
-    fullDescription: 'Spectral Graphics is an experimental web application that allows users to create unique, high-resolution abstract art using mathematical algorithms. Users can adjust parameters in real-time and export their creations for digital use or print.',
-    tags: ['Canvas API', 'JavaScript', 'Generative Art'],
+    category: 'אפליקציית ווב',
+    shortDescription: 'כלי מקוון ליצירת תבניות אמנות גנרטיביות מופשטות.',
+    fullDescription: 'Spectral Graphics היא אפליקציית ווב ניסיונית המאפשרת למשתמשים ליצור אמנות מופשטת ייחודית ברזולוציה גבוהה באמצעות אלגוריתמים מתמטיים. משתמשים יכולים להתאים פרמטרים בזמן אמת ולייצא את היצירות שלהם לשימוש דיגיטלי או להדפסה.',
+    tags: ['Canvas API', 'JavaScript', 'אמנות גנרטיבית'],
     mainImage: 'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=800',
     additionalImages: [
       'https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=800',
@@ -103,11 +103,11 @@ export const products: Product[] = [
   },
   {
     id: 'quantum-iot',
-    title: 'Quantum IoT System',
-    category: 'HARDWARE/SW',
-    shortDescription: 'Embedded software for home automation and security.',
-    fullDescription: 'Quantum IoT System integrates various smart home devices into a single, secure ecosystem. The software is optimized for low-latency communication and includes advanced encryption to protect user privacy. It allows for seamless control of lighting, climate, and security via a central hub or mobile app.',
-    tags: ['C++', 'MQTT', 'Python', 'Security'],
+    title: 'מערכת Quantum IoT',
+    category: 'חומרה/תוכנה',
+    shortDescription: 'תוכנה משובצת עבור אוטומציה ביתית ואבטחה.',
+    fullDescription: 'מערכת Quantum IoT משלבת מכשירי בית חכם שונים לאקו-סיסטם אחד מאובטח. התוכנה מותאמת לתקשורת בשיהוי נמוך וכוללת הצפנה מתקדמת להגנה על פרטיות המשתמש. היא מאפשרת שליטה חלקה בתאורה, אקלים ואבטחה באמצעות רכזת מרכזית או אפליקציית מובייל.',
+    tags: ['C++', 'MQTT', 'Python', 'אבטחה'],
     mainImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800',
     additionalImages: [
       'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=800',

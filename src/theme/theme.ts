@@ -1,6 +1,7 @@
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
+  direction: 'rtl',
   palette: {
     mode: 'dark',
     primary: {
@@ -19,7 +20,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
+    fontFamily: '"Assistant", "Inter", "Roboto", "Helvetica", "Arial", sans-serif',
     h1: {
       fontWeight: 700,
       fontSize: '3.5rem',
@@ -33,7 +34,6 @@ const theme = createTheme({
     },
     subtitle2: {
       fontWeight: 600,
-      textTransform: 'uppercase',
       letterSpacing: '0.1em',
       fontSize: '0.75rem',
       color: '#7c4dff',
