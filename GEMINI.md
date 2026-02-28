@@ -35,15 +35,17 @@ A modern, RTL-supported portfolio application built with React, Vite, and Materi
 - **Testing**: While no test framework is explicitly listed in `package.json`, ensure manual verification of UI changes.
 
 ## Deployment Troubleshooting (GitHub Pages)
-- **Blank Screen (Asset Loading)**: 
-  - **GitHub User Page** (`username.github.io`): Must use `base: '/'` in `vite.config.ts`.
-  - **GitHub Project Page** (`username.github.io/repo-name/`): Must use `base: '/repo-name/'` or `./`.
-- **SPA Routing (Refreshes/Direct Links)**: 
-  - GitHub Pages does not support SPA routing natively. **Always use `HashRouter`** for production stability. This ensures that direct links and refreshes work without complex `404.html` redirection logic.
+- **CRITICAL: Blank Screen / White Page**: 
+  - **Symptoms**: The site loads but shows a blank white screen, or assets return 404.
+  - **ROOT CAUSE**: Standard SPA routing (BrowserRouter) and absolute paths (`/assets/`) often fail on GitHub Pages when served from repositories or if server-side redirection is not possible.
+  - **MANDATORY SOLUTION**: 
+    1.  **`vite.config.ts`**: Set `base: './'` (relative path). This is the most portable and robust setting for GitHub Pages.
+    2.  **`src/App.tsx`**: **ALWAYS USE `HashRouter`** for GitHub Pages production. It avoids the need for complex `404.html` hacks and ensures all routes work after a browser refresh.
 - **Case Sensitivity**: GitHub Pages is case-sensitive. Ensure all file paths and imports match exactly in casing.
+- **Verification**: If the screen remains blank, check if the "טוען..." (Loading) message in `index.html` is visible. If it is, the HTML loaded but the JS crashed (check console). If it's not, the HTML itself failed to load.
 
 ## Critical Mandates
 - **RTL Integrity**: Do not introduce styles that break RTL layout (e.g., avoid hardcoded `padding-left` when `padding-right` is intended for RTL).
 - **Consistency**: Maintain the established dark theme aesthetic and Material UI component overrides.
 - **Performance**: Leverage Vite's optimized build and React's efficient rendering patterns.
-- **Routing**: **Stick to `HashRouter`** for all production deployments on GitHub Pages.
+- **Routing**: **PERMANENT MANDATE: Use `HashRouter`** for production stability on GitHub Pages. Never switch to `BrowserRouter` without a confirmed server-side configuration.
