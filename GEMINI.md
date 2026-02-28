@@ -34,7 +34,15 @@ A modern, RTL-supported portfolio application built with React, Vite, and Materi
 - **Building**: Run `npm run build` to verify type-checking and production build integrity.
 - **Testing**: While no test framework is explicitly listed in `package.json`, ensure manual verification of UI changes.
 
+## Deployment Troubleshooting (GitHub Pages)
+- **Blank Screen Issues**: 
+  - Ensure `vite.config.ts` uses `base: './'` for relative asset paths. This prevents "404 Not Found" for assets if the site is not at the root domain.
+  - **Routing**: GitHub Pages does not support SPA routing (BrowserRouter) natively. **Always use `HashRouter`** to ensure that direct links and refreshes work correctly without complex `404.html` redirection logic.
+  - **Case Sensitivity**: GitHub Pages is case-sensitive. Ensure all file paths and imports match exactly in casing.
+  - **Public Folder**: Any assets in the `public/` folder will be served at the root. Ensure `404.html` is present if `BrowserRouter` is still being attempted, although `HashRouter` is the preferred solution here.
+
 ## Critical Mandates
 - **RTL Integrity**: Do not introduce styles that break RTL layout (e.g., avoid hardcoded `padding-left` when `padding-right` is intended for RTL).
 - **Consistency**: Maintain the established dark theme aesthetic and Material UI component overrides.
 - **Performance**: Leverage Vite's optimized build and React's efficient rendering patterns.
+- **Routing**: Stick to `HashRouter` for production stability on GitHub Pages unless server-side redirection is configured.
