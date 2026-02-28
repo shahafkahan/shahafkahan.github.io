@@ -88,4 +88,30 @@ export const products: Product[] = [
       'https://images.unsplash.com/photo-1534951470249-15931c00280d?auto=format&fit=crop&q=80&w=800',
     ]
   },
+  {
+    id: 'check-drive-space',
+    title: 'ניטור שטח דיסק והתראות',
+    category: 'אוטומציה',
+    shortDescription: 'בדיקה אוטומטית של שטח הדיסק ושליחת התראות אימייל במקרה של חוסר במקום.',
+    fullDescription: 'סקריפט זה בודק את כל הכוננים הקשיחים המקומיים (HDD/SSD). אם כונן כלשהו מלא ביותר מ-90%, הוא שולח אליך אוטומטית התראת אימייל עם דוח מפורט של כל הכוננים שלך. הוא תוכנן להרצה אוטומטית באמצעות משימה מתוזמנת יומית.',
+    tags: ['PowerShell', 'Automation', 'Monitoring', 'Email'],
+    mainImage: 'https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&q=80&w=800',
+    additionalImages: [
+      'https://images.unsplash.com/photo-1551288049-bbbda5366991?auto=format&fit=crop&q=80&w=800',
+      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
+    ]
+  },
+  {
+    id: 'cleanup-folders',
+    title: 'ניקוי תיקיות אוטומטי',
+    category: 'תחזוקה',
+    shortDescription: 'ניקוי שבועי של תיקיות שולחן העבודה וההורדות לשמירה על סדר וביצועים.',
+    fullDescription: 'סקריפט זה מנקה את המחשב שלך על ידי מחיקת כל הקבצים והתיקיות בתוך תיקיות ה\'שולחן העבודה\' וה\'הורדות\'. הוא מדלג על קבצים שנמצאים בשימוש על ידי תוכניות אחרות כדי למנוע שגיאות. הוא תוכנן להרצה אוטומטית בכל יום שישי בשעה 08:00 בבוקר.',
+    tags: ['Automation', 'Cleanup', 'Windows', 'Efficiency'],
+    mainImage: 'https://images.unsplash.com/photo-1584433144859-1fc3ab84a9ec?auto=format&fit=crop&q=80&w=800',
+    additionalImages: [
+      'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800',
+      'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=800',
+    ]
+  },
 ];
