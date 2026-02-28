@@ -1,0 +1,4 @@
+This script creates a daily backup of your chosen folder to Google Drive.
+It uses 'rclone' to synchronize your files, ensuring that your Google Drive is an exact mirror of your local folder.
+Any new files are uploaded, and files that were deleted locally are removed from the backup to keep it up to date.
+It is designed to run automatically every night at midnight (00:00).

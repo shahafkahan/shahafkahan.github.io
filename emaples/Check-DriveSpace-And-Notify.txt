@@ -1,0 +1,3 @@
+This script checks all local hard drives (HDDs/SSDs).
+If any drive is more than 90% full, it automatically sends an email notification to you with a detailed report of all your drives.
+It is designed to be run automatically by a daily scheduled task.
